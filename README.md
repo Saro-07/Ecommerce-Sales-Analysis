@@ -66,8 +66,5 @@ Olist connects small businesses to major Brazilian marketplaces. With 100k+ real
 4. Run all cells — the notebook will merge, clean, analyze, and export the final dataset.
 
 ## Author
-Saravanan J, [LinkedIn](https://www.linkedin.com/in/saravanan-jaisankar/)
+*(Saravanan J, [LinkedIn](https://www.linkedin.com/in/saravanan-jaisankar/))*
 
-## Author
-
-*(Add your name, LinkedIn, and portfolio link here)*
