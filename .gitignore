@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.env
+
+# Power BI temporary files
+*.tmp
+*.pbix.temp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Large raw datasets (download directly from Kaggle)
+*.zip
+data/raw/
