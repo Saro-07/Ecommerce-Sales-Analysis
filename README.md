@@ -24,14 +24,14 @@ The objective of this project is to simulate the complete analytics lifecycle of
 The interactive report is structured into two synchronized analytical views:
 
 ### Page 1: Executive Performance Overview
-*Tracks macro financial performance, product category mix, regional revenue concentration, and customer satisfaction correlations.*
+*Monitors macro revenue trends, category mix, regional concentration, and delivery impact on customer reviews.*
 
-![Executive Performance Overview](dashboard/executive_summary.png)
+![Executive Performance Overview](Dashboard/Executive%20Summary.png)
 
 ### Page 2: Logistics & Delivery Deep-Dive
-*Diagnoses state-level logistics bottlenecks, shipping duration distributions, on-time delivery rates, and review score ratings.*
+*Diagnoses state-level shipping bottlenecks, delivery duration distribution, and satisfaction drop-off.*
 
-![Logistics & Delivery Deep-Dive](dashboard/logistics_deep_dive.png)
+![Logistics & Delivery Deep-Dive](Dashboard/Logistics%20Deep-Dive.png)
 
 ---
 
