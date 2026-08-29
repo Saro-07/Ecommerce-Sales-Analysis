@@ -156,7 +156,7 @@ Open and run Olist_Sales_Analysis.ipynb in Jupyter Notebook or Google Colab.
 
 The notebook merges the raw tables, performs cleaning and exploratory visualization, and exports olist_cleaned_for_dashboard.xlsx.
 
-### 4. Open the Power BI Dashboard
+**4. Open the Power BI Dashboard**
 Open dashboard/OLIST E-COMMERCE INTELLIGENCE.pbix in Microsoft Power BI Desktop.
 
 If prompted to update data source paths, point to your local copy of olist_cleaned_for_dashboard.xlsx.
