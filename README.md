@@ -1,77 +1,77 @@
-# Olist E-Commerce Sales & Delivery Performance Analysis
-An end-to-end data analytics project examining sales trends, product performance, regional revenue distribution, and the relationship between delivery speed and customer satisfaction — using real, anonymized order data from Olist, a Brazilian e-commerce marketplace.
+# 🛒 Olist E-Commerce Sales & Delivery Performance Analysis
+### An End-to-End Data Analytics Case Study & Executive BI Suite
 
-## Business Problem
-Olist connects small businesses to major Brazilian marketplaces. With 100k+ real orders across 27 states, this project asks:
-- What's driving revenue, and where is it concentrated?
-- Which product categories and regions matter most?
-- Does delivery performance actually affect customer satisfaction — and by how much?
-- Where should the business focus to reduce risk and unlock growth?
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data_Cleaning-150458?logo=pandas)
+![Power BI](https://img.shields.io/badge/Power_BI-Executive_Dashboard-yellow?logo=powerbi)
+![DAX](https://img.shields.io/badge/DAX-Custom_Measures-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-## Dataset
-- **Source:** [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) (Kaggle)
-- **Size:** ~110,000 delivered orders, September 2016 – August 2018
-- **Scope:** Orders, order items, customers, products (71 categories), payments, reviews, and sellers across 27 Brazilian states
-- **Note:** Real commercial data, anonymized by Olist; product categories translated from Portuguese to English for analysis
+---
 
-## Tools & Skills Used
-| Tool | Purpose |
-|---|---|
-| **Python (Pandas)** | Data merging, cleaning, aggregation |
-| **Matplotlib / Seaborn** | Exploratory visualizations |
-| **Jupyter Notebook (Google Colab)** | Analysis environment |
-| **Power BI / Tableau** | Interactive dashboard *(add link/screenshot once built)* |
-| **Excel** | Cleaned dataset export for dashboarding |
+## 📌 Project Overview
+This project is an end-to-end data analytics case study examining **~110,000 real, anonymized e-commerce orders** from **Olist**, the largest online marketplace in Brazil. 
 
-**Skills demonstrated:** data cleaning, multi-table joins, exploratory data analysis (EDA), time-series trend analysis, business insight generation, data storytelling.
+The objective of this project is to simulate the complete analytics lifecycle of a Business Intelligence Analyst:
+1. **Data Engineering & Preparation:** Extracting, merging, and cleaning relational datasets in **Python (Pandas)**.
+2. **Exploratory Data Analysis (EDA):** Uncovering sales trends, regional concentration, and shipping behavior in **Jupyter Notebook**.
+3. **Executive Dashboard Design:** Building an interactive, two-page enterprise reporting cockpit in **Power BI Desktop** using custom **DAX measures**, container-based layouts, and smooth sidebar navigation.
 
-## Project Workflow
-1. **Load & merge** — Combined 7 relational tables (orders, order items, customers, products, payments, reviews, sellers) into a single analysis-ready dataset.
-2. **Clean** — Parsed timestamps, handled missing values, filtered to `delivered` orders only (110,197 of 112,650) to keep revenue figures accurate — excluding cancelled/unfulfilled orders.
-3. **Engineer features** — Calculated delivery time (days) and a late-delivery flag by comparing actual vs. estimated delivery dates.
-4. **Explore** — Analyzed monthly revenue trends, top categories, regional performance, average order value, payment method usage, and delivery's impact on review scores.
-5. **Export** — Produced a cleaned, merged dataset (`olist_cleaned_for_dashboard.xlsx`) for use in Power BI / Tableau.
+---
 
-## Key Insights
-- **Revenue:** Total revenue of **R$13.2M** across ~110k delivered orders. Growth was steady through 2017, peaking at **R$987.8k in November 2017** (likely a Black Friday effect), then stabilizing between R$850k–975k/month through mid-2018.
+## 📊 Executive Power BI Dashboard
 
-- **Product mix:** No single category dominates — `health_beauty` leads at just **9.3%** of revenue, followed by `watches_gifts` (8.8%) and `bed_bath_table` (7.7%). The catalog is diversified, which lowers risk but also means there's no single lever to pull for a quick revenue boost.
+The interactive report is structured into two synchronized analytical views:
 
-- **Regional concentration:** **São Paulo (SP) alone drives 38.3% of total revenue** — more than double the next-largest state, Rio de Janeiro (13.3%). SP + RJ + MG together account for **over 63%** of revenue, highlighting significant geographic concentration risk and untapped opportunity in underpenetrated states (GO, ES, DF each under 2.5%).
+### Page 1: Executive Performance Overview
+*Tracks macro financial performance, product category mix, regional revenue concentration, and customer satisfaction correlations.*
 
-- **Delivery drives satisfaction — significantly:** This is the standout finding. On-time orders average a **4.21/5** review score, while late orders average just **2.55/5** — a **1.66-point gap**. Only 7.9% of orders arrive late, but each one carries a disproportionate hit to customer satisfaction.
+![Executive Performance Overview](dashboard/executive_summary.png)
 
-- **Average Order Value:** **R$137.04** per order.
+### Page 2: Logistics & Delivery Deep-Dive
+*Diagnoses state-level logistics bottlenecks, shipping duration distributions, on-time delivery rates, and review score ratings.*
 
-## Recommendations
-1. **Invest in delivery reliability.** Even a modest reduction in the 7.9% late-delivery rate would likely produce an outsized lift in average review scores, given the steep satisfaction drop-off for late orders.
-2. **Diversify regional reach.** With SP/RJ/MG accounting for the majority of revenue, a targeted expansion or marketing push into underpenetrated states (e.g. GO, ES, DF) represents a lower-risk growth opportunity than doubling down on saturated regions.
-3. **Monitor category mix, not just top performers.** Because revenue is spread across many categories rather than concentrated in one, category-level strategy should focus on protecting broad performance rather than optimizing a single "hero" category.
+![Logistics & Delivery Deep-Dive](dashboard/logistics_deep_dive.png)
 
-## 📁 Repository Structure
+---
+
+## 🎯 Key Business Questions Addressed
+* **Revenue Drivers:** What drives marketplace revenue, and how seasonal are sales trends across the 2-year timeline?
+* **Product Catalog Strategy:** Is revenue concentrated in a single "hero" category, or is the product mix well-diversified?
+* **Geographic Distribution:** Which Brazilian states generate the bulk of marketplace activity, and where are the growth opportunities?
+* **Logistics vs. Customer Satisfaction:** What is the quantifiable impact of delivery delays on customer review scores?
+
+---
+
+## 🛠️ Technology Stack & Tools
+
+| Layer | Tool / Technology | Purpose |
+| :--- | :--- | :--- |
+| **Data Processing** | Python (`pandas`, `numpy`) | Data type parsing, relational table merges, feature engineering |
+| **Exploratory Analysis** | `matplotlib`, `seaborn`, Jupyter Notebook | Statistical distributions, time-series plotting, and data validation |
+| **Data Storage / Export** | Microsoft Excel (`.xlsx`), CSV | Intermediate analysis-ready dataset for downstream BI ingestion |
+| **Business Intelligence** | Microsoft Power BI Desktop | Interactive 2-page report, DAX modeling, custom UI/UX design |
+| **Version Control** | Git & GitHub | Project version control and documentation hosting |
+
+---
+
+## 🔄 End-to-End Analytics Workflow
+
 ```text
-Ecommerce-Sales-Analysis/
-├── .gitignore
-├── LICENSE
-├── requirements.txt
-├── README.md
-├── DAX_Measures.md
-├── Olist_Sales_Analysis.ipynb
-├── olist_cleaned_for_dashboard.xlsx
-├── dashboard/
-    ├── OLIST E-COMMERCE INTELLIGENCE.pbix
-    ├── executive_summary.png
-    └── logistics_deep_dive.png
-
-## Dashboard
-*OLIST E-COMMERCE INTELLIGENCE.pbix* — An interactive Power BI / Tableau dashboard built on the cleaned dataset, covering monthly revenue trends, category performance, state-level revenue, and delivery vs. satisfaction, with filters for date range, category, and region.
-
-## How to Reproduce
-1. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
-2. Open `Olist_Sales_Analysis.ipynb` in Jupyter or [Google Colab](https://colab.research.google.com).
-3. Upload the raw CSV files to the same environment.
-4. Run all cells — the notebook will merge, clean, analyze, and export the final dataset.
-
-## Author
-*(Saravanan J, [LinkedIn](https://www.linkedin.com/in/saravanan-jaisankar/))*
-
+[Kaggle Raw CSVs] (9 relational tables)
+       │
+       ▼
+[Python / Pandas] (Data Cleaning & Feature Engineering)
+       │  • Merged 7 core tables on relational IDs
+       │  • Filtered strictly to 'delivered' orders (110,197 rows)
+       │  • Engineered: 'delivery_days' and 'late_delivery' flags
+       │  • Cleaned product category Portuguese translations
+       ▼
+[olist_cleaned_for_dashboard.xlsx] (Exported Master Dataset)
+       │
+       ▼
+[Power BI Modeling & DAX]
+       │  • Built 5 core KPI measures & calculated columns
+       │  • Configured interactive cross-filtering & custom tooltips
+       ▼
+[2-Page Executive Dashboard] (Executive Summary + Logistics Deep-Dive)
