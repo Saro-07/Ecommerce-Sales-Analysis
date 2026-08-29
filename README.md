@@ -64,7 +64,7 @@ Ecommerce-Sales-Analysis/
     └── logistics_deep_dive.png
 
 ## Dashboard
-*(Add once built)* — An interactive Power BI / Tableau dashboard built on the cleaned dataset, covering monthly revenue trends, category performance, state-level revenue, and delivery vs. satisfaction, with filters for date range, category, and region.
+*OLIST E-COMMERCE INTELLIGENCE.pbix* — An interactive Power BI / Tableau dashboard built on the cleaned dataset, covering monthly revenue trends, category performance, state-level revenue, and delivery vs. satisfaction, with filters for date range, category, and region.
 
 ## How to Reproduce
 1. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
