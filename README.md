@@ -48,13 +48,20 @@ Olist connects small businesses to major Brazilian marketplaces. With 100k+ real
 2. **Diversify regional reach.** With SP/RJ/MG accounting for the majority of revenue, a targeted expansion or marketing push into underpenetrated states (e.g. GO, ES, DF) represents a lower-risk growth opportunity than doubling down on saturated regions.
 3. **Monitor category mix, not just top performers.** Because revenue is spread across many categories rather than concentrated in one, category-level strategy should focus on protecting broad performance rather than optimizing a single "hero" category.
 
-## Repository Contents
-```
-├── Olist_Sales_Analysis.ipynb        # Full analysis notebook (Python/Pandas)
-├── olist_cleaned_for_dashboard.xlsx  # Cleaned, merged dataset for BI tools
-├── README.md                         # This file
-└── dashboard/                        # (add) Power BI/Tableau file + screenshot
-```
+## 📁 Repository Structure
+```text
+Ecommerce-Sales-Analysis/
+├── .gitignore
+├── LICENSE
+├── requirements.txt
+├── README.md
+├── DAX_Measures.md
+├── Olist_Sales_Analysis.ipynb
+├── olist_cleaned_for_dashboard.xlsx
+├── dashboard/
+    ├── OLIST E-COMMERCE INTELLIGENCE.pbix
+    ├── executive_summary.png
+    └── logistics_deep_dive.png
 
 ## Dashboard
 *(Add once built)* — An interactive Power BI / Tableau dashboard built on the cleaned dataset, covering monthly revenue trends, category performance, state-level revenue, and delivery vs. satisfaction, with filters for date range, category, and region.
